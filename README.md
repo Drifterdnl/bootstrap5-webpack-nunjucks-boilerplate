@@ -36,8 +36,11 @@ cd project-name
 # Install dependencies
 yarn          # npm install
 
-# Run webpack-dev-server and let the magic happen
+# Run webpack-dev-server with page reload
 yarn start    # npm start
+
+# Run webpack-dev-server without page reload
+yarn watch    # npm start
 
 # Build the project from sources
 yarn build    # npm run-script build
@@ -52,8 +55,9 @@ yarn deploy
 
 ## 💻 Available Scripts
 
-- `serve` - run the `webpack-dev-server`
-- `build` - build the project
+- `serve` - run the `webpack-dev-server` with page reload
+- `watch` - run the `webpack-dev-server` without page reload
+- `build` - build the project for production
 - `deploy` - deploy the `dist` folder to GitHub Pages
 
 <br/>

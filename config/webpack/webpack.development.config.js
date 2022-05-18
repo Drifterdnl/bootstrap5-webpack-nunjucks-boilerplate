@@ -11,7 +11,9 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     port: process.env.PORT || 8080,
-    hot: true,
+    open: true,
+    hot: false,
+    liveReload: false,
     compress: true,
     historyApiFallback: true,
     before: (app, server) => chokidar.watch('./src/**/*.njk').on('change', () => {
