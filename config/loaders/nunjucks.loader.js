@@ -1,5 +1,5 @@
 const path = require('path')
-const { SOURCE_DIR } = require('../constants')
+const { SOURCE_DIR, IS_DEV_MODE } = require('../constants')
 const createThreadLoader = require('../utils/createThreadLoader')
 
 
@@ -18,7 +18,9 @@ const threadLoader = createThreadLoader({
  */
 const htmlLoader = {
   loader: 'html-loader',
-  options: {  }
+  options: {
+    minimize: !IS_DEV_MODE
+  }
 }
 
 
