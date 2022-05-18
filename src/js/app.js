@@ -1,6 +1,7 @@
 import audio from '@/audio/click.mp3'
 import Cursor from './libs/Cursor'
 import greeting from './libs/greeting'
+import 'bootstrap'
 
 
 /* The initial HTML document has been completely loaded and parsed */
