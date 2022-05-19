@@ -1,15 +1,12 @@
-# 📦 Webpack + Nunjucks Boilerplate
+# 📦 Bootstrap 5 + Webpack + Nunjucks Boilerplate
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Webpack + Nunjucks boilerplate for static websites that has all the necessary modern tools and optimizations built-in.
-
-![Webpack Boilerplate](https://habrastorage.org/webt/iy/mr/2a/iymr2asueudrawkzepthfai6qvy.jpeg)
+Bootstrap 5 + Webpack + Nunjucks boilerplate for static websites that has all the necessary modern tools and optimizations built-in.
 
 <br/>
 
-
-
 ## ⚗️ Features
+- [Bootstrap 5](https://getbootstrap.com/)
 - [Webpack](https://webpack.js.org)
 - [Nunjucks](https://mozilla.github.io/nunjucks) (supports multiple pages)
 - [Babel](https://babeljs.io)
@@ -235,6 +232,7 @@ Indicates whether TypeScript support should be enabled. <br/>
 
 ## 💩 Authors
 * **[Aleksey Solovyev](https://github.com/alsolovyev)** - [solovyev.a@icloud.com](mailto:solovyev.a@icloud.com)
+* **[Daniel Muller](https://github.com/drifterdnl)** - [danielm9987@gmail.com](mailto:danielm9987@gmail.com)
 
 <br/>
 
