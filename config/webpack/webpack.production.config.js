@@ -2,7 +2,7 @@ const { OUTPUT_DIR, PUBLIC_PATH } = require('../constants')
 const sassLoader = require('../loaders/sass.loader.js')
 const assetLoader = require('../loaders/asset.loader.js')
 const cssExtractPlugin = require('../plugins/cssExtract.plugin.js')
-
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin")
 
 module.exports = {
   name: 'webpack-production-config',
@@ -33,5 +33,24 @@ module.exports = {
       sassLoader,
       assetLoader
     ]
-  }
+  },
+  optimization: {
+    minimizer: [
+      "...",
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            // Lossless optimization with custom option
+            // Feel free to experiment with options for better result for you
+            plugins: [
+              ["gifsicle", { interlaced: true }],
+              ["jpegtran", { progressive: true }],
+              ["optipng", { optimizationLevel: 5 }],
+            ],
+          },
+        },
+      }),
+    ],
+  },
 }

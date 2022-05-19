@@ -34,5 +34,8 @@
 - [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)
 - [svgo-loader](https://github.com/svg/svgo-loader)
 
-## Optimization
+## Optimize images
+- [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
+
+## Optimize build
 - [thread-loader](https://github.com/webpack-contrib/thread-loader)
