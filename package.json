@@ -9,7 +9,7 @@
     "start": "yarn serve",
     "serve": "cross-env NODE_ENV=development TS_SUPPORT=false webpack serve --hot --profile --progress --config ./config/webpack.config.js",
     "watch": "cross-env NODE_ENV=development TS_SUPPORT=false webpack serve --profile --progress --config ./config/webpack.config.js",
-    "build": "cross-env NODE_ENV=production TS_SUPPORT=false webpack --profile --json=compilation-stats.json --progress --config ./config/webpack.config.js",
+    "build": "cross-env NODE_ENV=production TS_SUPPORT=false webpack --profile --progress --config ./config/webpack.config.js",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
